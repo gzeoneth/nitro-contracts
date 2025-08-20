@@ -158,24 +158,31 @@ interface IExpressLaneAuction is IAccessControlEnumerableUpgradeable, IERC165Upg
     );
 
     /// @notice The role given to the address that can resolve auctions
+    // solhint-disable-next-line func-name-mixedcase
     function AUCTIONEER_ROLE() external returns (bytes32);
 
     /// @notice The role that administers AUCTIONEER_ROLE
+    // solhint-disable-next-line func-name-mixedcase
     function AUCTIONEER_ADMIN_ROLE() external returns (bytes32);
 
     /// @notice The role given to the address that can set the minimum reserve
+    // solhint-disable-next-line func-name-mixedcase
     function MIN_RESERVE_SETTER_ROLE() external returns (bytes32);
 
     /// @notice The role given to the address that can set the reserve
+    // solhint-disable-next-line func-name-mixedcase
     function RESERVE_SETTER_ROLE() external returns (bytes32);
 
     /// @notice The role that administers the RESERVE_SETTER_ROLE
+    // solhint-disable-next-line func-name-mixedcase
     function RESERVE_SETTER_ADMIN_ROLE() external returns (bytes32);
 
     /// @notice The role given to the address that can set the beneficiary
+    // solhint-disable-next-line func-name-mixedcase
     function BENEFICIARY_SETTER_ROLE() external returns (bytes32);
 
     /// @notice The role given to addresses that can set round timing info
+    // solhint-disable-next-line func-name-mixedcase
     function ROUND_TIMING_SETTER_ROLE() external returns (bytes32);
 
     /// @notice The beneficiary who receives the funds that are paid by the auction winners

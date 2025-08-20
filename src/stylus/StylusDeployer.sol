@@ -8,7 +8,7 @@ import {ArbWasm} from "../precompiles/ArbWasm.sol";
 /// @notice Stylus contracts do not support constructors. Instead, Stylus devs can use this contract to deploy and
 ///         initialize their contracts atomically
 contract StylusDeployer {
-    ArbWasm constant ARB_WASM = ArbWasm(0x0000000000000000000000000000000000000071);
+    ArbWasm internal constant ARB_WASM = ArbWasm(0x0000000000000000000000000000000000000071);
 
     event ContractDeployed(address deployedContract);
 
